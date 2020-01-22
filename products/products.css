@@ -3,7 +3,7 @@ body {
 }
 
 .product-card {
-    background-color: darkolivegreen;
+    background-color: rgb(63, 128, 23);
     max-width: 300px;
     height: 400px;
     border-radius: 1rem;
