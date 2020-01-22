@@ -7,7 +7,8 @@ const renderProduct = (flower) => {
     listItem.appendChild(productCard);
 
     const image = document.createElement('img');
-    image.src = '../assets/' + flower.image;
+    image.className = 'product-image';
+    image.src = flower.image;
     productCard.appendChild(image);
 
     const descriptionDiv = document.createElement('div');
@@ -16,6 +17,7 @@ const renderProduct = (flower) => {
 
     const productDescription = document.createElement('p');
     productDescription.className = 'product-description';
+    productDescription.textContent = flower.name;
     descriptionDiv.appendChild(productDescription);
 
     const productPrice = document.createElement('p');

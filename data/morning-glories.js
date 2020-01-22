@@ -10,7 +10,7 @@ const heavenlyBlue = {
 const knowliansBlack = {
     id: 'knowlians black',
     name: 'Knowlians Black',
-    image: '',
+    image: 'https://www.edenbrothers.com/store/media/Seeds-Flowers/resized/SFMOR137-1_medium.jpg',
     genera: 'Ipomoea-Purpurea',
     color: 'dark-red, black',
     price: 3.50,
