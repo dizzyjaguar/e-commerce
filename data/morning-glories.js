@@ -40,7 +40,7 @@ const redPicotee = {
     image: '',
     genera: 'Ipomoea-Nil',
     color: 'bright-red, white',
-    price: ,
+    price: 4.00,
 };
 
 const flyingSaucers = {
