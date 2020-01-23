@@ -12,33 +12,37 @@
         <h1>Shopping Cart</h1>
     </header>
     <main>
-        <table>
-            <thead>
-                <tr id="table-header">
-                    <th>Quantity</th>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Total</th>
-                </tr>
-            </thead>
-            <tbody id="the-table-body">
-                <tr>
-                    <td id="quantity"></td>
-                    <td id="product-name"></td>
-                    <td id="product-price"></td>
-                    <td id="product-total-price"></td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th id="grand-total"></th>
-                </tr>
-            </tfoot>
-        </table>
-        <button>Purchase</button>
+        <div class="table-div">
+            <table>
+                <thead>
+                    <tr id="table-header">
+                        <th>Quantity</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="the-table-body">
+                    <tr>
+                        <td id="quantity"></td>
+                        <td id="product-name"></td>
+                        <td id="product-price"></td>
+                        <td id="product-total-price"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th id="grand-total"></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="purchase-button">
+            <button>Purchase <span>....Please</span></button>
+        </div>
         <script type="module" src="shopping-cart.js"></script>
     </main>
     
