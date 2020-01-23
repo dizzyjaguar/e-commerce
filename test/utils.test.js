@@ -1,6 +1,6 @@
 import morningGlories from '../data/morning-glories.js';
 import cart from '../data/cart.js';
-import { findById, calcLineItem } from '../common/utils.js';
+import { findById, calcLineItem, calcOrderTotal } from '../common/utils.js';
 
 const test = QUnit.test;
 
@@ -27,3 +27,11 @@ test('calculate an item quantity and amount', function(assert) {
 
     assert.equal(lineTotal, expected);
 });
+
+test(' calculate grand total of the order', function(assert) {
+    const expected = 69.25;
+
+    const theGrandTotal = calcOrderTotal(cart, morningGlories);
+
+    assert.equal(theGrandTotal, expected);
+})
