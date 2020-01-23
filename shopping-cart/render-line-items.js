@@ -1,4 +1,4 @@
-export const renderLineItems = (cartLineItem, product) => {
+const renderLineItems = (cartLineItem, product) => {
     const tableRow = document.createElement('tr');
 
     const qtyCell = document.createElement('td');
@@ -20,4 +20,6 @@ export const renderLineItems = (cartLineItem, product) => {
     tableRow.appendChild(totalPriceCell);
 
     return tableRow;
-}
+};
+
+export default renderLineItems;
