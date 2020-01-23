@@ -2,12 +2,29 @@ body {
     background-color: black;
 }
 
+h2 {
+    text-align: center;
+    color: wheat;
+    font-size: 40px;
+}
+
+li {
+    float: left;
+    /* width: 300px; */
+}
+
+
+.product-list-div {
+    
+    
+}
+
 .product-card {
     background-color: rgb(63, 128, 23);
     max-width: 300px;
     height: 400px;
     border-radius: 1rem;
-    margin: 0 auto;
+    margin: 10px;
     overflow: hidden;
     border: 3px solid white;
     
@@ -46,7 +63,12 @@ body {
     font-weight: 900;
 }
 
-#product-button:hover{
+.product-button:hover{
     cursor: pointer;
     opacity: .7;
+}
+
+#flower-list {
+    max-width: 900px;
+    /* position: relative; */
 }

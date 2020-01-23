@@ -1,7 +1,7 @@
 const heavenlyBlue = {
     id: 'heavenly blue',
     name: 'Heavenly Blue',
-    image: '',
+    image: 'https://www.edenbrothers.com/store/media/Seeds-Flowers/ss_size1/SFMOR115-1.jpg',
     genera: 'Ipomoea-Purpurea',
     color: 'blue',
     price: 3.00,
@@ -19,7 +19,7 @@ const knowliansBlack = {
 const japaneseRuffled = {
     id: 'japanese ruffled',
     name: 'Japanese Ruffled',
-    image: '',
+    image: 'https://www.edenbrothers.com/store/media/Seeds-Flowers/ss_size1/SFMOR142-1.jpg',
     genera: 'Ipomoea-Nil',
     color: 'bright-red, white',
     price: 4.25,
@@ -28,7 +28,7 @@ const japaneseRuffled = {
 const bluePicotee = {
     id: 'blue picotee',
     name: 'Blue Picotee',
-    image: '',
+    image: 'https://www.edenbrothers.com/store/media/Seeds-Flowers/ss_size1/SFMOR140-1.jpg',
     genera: 'Ipomoea-Nil',
     color: 'purple',
     price: 5.50,
@@ -37,7 +37,7 @@ const bluePicotee = {
 const redPicotee = {
     id: 'red picotee',
     name: 'Red Picotee',
-    image: '',
+    image: 'https://www.edenbrothers.com/store/media/Seeds-Flowers/ss_size1/SFMOR145-1.jpg',
     genera: 'Ipomoea-Nil',
     color: 'bright-red, white',
     price: 4.00,
@@ -46,7 +46,7 @@ const redPicotee = {
 const flyingSaucers = {
     id: 'flying saucers',
     name: 'Flying Saucers',
-    image: '',
+    image: 'https://www.edenbrothers.com/store/media/Seeds-Flowers/ss_size1/SFMOR113-1.jpg',
     genera: 'Ipomoea-Purpurea',
     color: 'blue, white',
     price: 3.00,
@@ -55,7 +55,7 @@ const flyingSaucers = {
 const scarlettOhara = {
     id: 'scarlett ohara',
     name: 'Scarlett Ohara',
-    image: '',
+    image: 'https://www.edenbrothers.com/store/media/Seeds-Flowers/ss_size1/SFMOR117.jpg',
     genera: 'Ipomoea-Nil',
     color: 'red',
     price: 3.00,
