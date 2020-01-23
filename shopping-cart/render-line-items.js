@@ -11,12 +11,12 @@ const renderLineItems = (cartLineItem, product) => {
     tableRow.appendChild(productCell);
 
     const priceCell = document.createElement('td');
-    priceCell.textContent = product.price;
+    priceCell.textContent = product.price.toFixed(2);
     tableRow.appendChild(priceCell);
 
     const totalPriceCell = document.createElement('td');
     const totalOfThisLine = cartLineItem.quantity * product.price;
-    totalPriceCell.textContent = totalOfThisLine;
+    totalPriceCell.textContent = totalOfThisLine.toFixed(2);
     tableRow.appendChild(totalPriceCell);
 
     return tableRow;
