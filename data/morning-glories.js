@@ -63,4 +63,4 @@ const scarlettOhara = {
 
 const morningGlories = [heavenlyBlue, knowliansBlack, japaneseRuffled, bluePicotee, redPicotee, flyingSaucers, scarlettOhara];
 
-export default morningGlories
+export default morningGlories;

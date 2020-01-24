@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="shopping-cart.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+    <main>
+        <div class="table-div">
+            <table>
+                <thead>
+                    <tr id="table-header">
+                        <th>Quantity</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="the-table-body">
+                    <tr>
+                        <td id="quantity"></td>
+                        <td id="product-name"></td>
+                        <td id="product-price"></td>
+                        <td id="product-total-price"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th id="grand-total"></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="purchase-button">
+            <button>Purchase <span>....Please</span></button>
+        </div>
+        <script type="module" src="shopping-cart.js"></script>
+    </main>
+    
+</body>
+</html>
