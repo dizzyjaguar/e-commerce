@@ -32,10 +32,17 @@ const renderProduct = (flower) => {
     });
     productPrice.textContent = usd;
 
+    // const qtyInput = document.createElement('input');
+    // qtyInput.type = 'number';
+    // qtyInput.name = 'quantity';
+    
+
+
     const productButton = document.createElement('button');
     productButton.className = 'product-button';
     productButton.textContent = 'Add';
     productButton.value = flower.id;
+
     // making it so the button actual sends data to the local storage for the shopping cart
     productButton.addEventListener('click', () => {
         // looking for cart in local storage 
@@ -75,6 +82,7 @@ const renderProduct = (flower) => {
 
 
     descriptionDiv.appendChild(productButton);
+    // descriptionDiv.appendChild(qtyInput);
 
     return listItem;
 };
