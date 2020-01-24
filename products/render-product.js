@@ -70,7 +70,7 @@ const renderProduct = (flower) => {
         // literally putting the cart into local storage with the .setItem() method
         localStorage.setItem('cart', json);
         
-        alert('Added 1 ' + flower.name + 'to your cart');
+        alert('Added 1 ' + flower.name + ' to your cart');
     });
 
 
