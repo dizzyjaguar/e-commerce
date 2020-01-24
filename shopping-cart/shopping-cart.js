@@ -1,11 +1,17 @@
 import morningGlories from '../data/morning-glories.js';
-import cart from '../data/cart.js';
 import renderLineItems from './render-line-items.js';
-import { findById, calcLineItem, calcOrderTotal } from '../common/utils.js';
+import { findById, calcOrderTotal } from '../common/utils.js';
 
 const tableBody = document.getElementById('the-table-body');
 const orderTotalCell = document.getElementById('grand-total');
 
+const json = localStorage.getItem('cart');
+let cart;
+if (json) {
+    cart = JSON.parse(json);
+} else {
+    cart = [];
+}
 
 for (let i = 0; i < cart.length; i++) {
     let currentLineItem = cart[i];
