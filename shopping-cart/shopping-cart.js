@@ -4,6 +4,7 @@ import { findById, calcOrderTotal } from '../common/utils.js';
 
 const tableBody = document.getElementById('the-table-body');
 const orderTotalCell = document.getElementById('grand-total');
+const purchaseCartBtn = document.getElementById('purchase-cart-btn');
 
 // making a variable that stores our localstorage object known as cart
 const json = localStorage.getItem('cart');
@@ -26,3 +27,14 @@ for (let i = 0; i < cart.length; i++) {
 
 const orderGrandTotal = calcOrderTotal(cart, morningGlories);
 orderTotalCell.textContent = 'Grand Total: ' + '$' + orderGrandTotal;
+
+
+if (cart.length === 0) {
+    purchaseCartBtn.disabled = true;
+} else {
+    purchaseCartBtn.addEventListener('click', () => {
+        localStorage.removeItem('cart');
+        alert('You have ordered ' + JSON.stringify(cart, true, 2));
+        window.location = '../';
+    });
+}
