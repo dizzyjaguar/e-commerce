@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="products.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="/shopping-cart/index.html">Cart</a>
+        <a href="/products/index.html">Flowers</a>
+        <a href="https://en.wikipedia.org/wiki/Morning_glory">About Us</a>
+    </div>
+    
+    <div class="product-create-form">
+        <form>
+            <label for="id">*ID</label>
+            <input type="text" name="id"> <br>
+            <label for="name">*Name</label>
+            <input type="text" name="name"> <br>
+            <label for="photo">*Photo</label>
+            <input type="text" name="photo"> <br>
+            <label for="price">*Price</label>
+            <input type="number" name="price"> <br>            
+        </form>
+        <button id="add-product">Add Product</button>
+    </div>
+
+    <div class="product-list-div">
+        <ul id="flowers-list">
+            <!-- This is where each individual product should be rendered, 
+            refer to the commented out product sample below, make sure each item renders as a <li> within this <ul> -->
+        </ul>
+    </div>
+
+
+    <script type="module" src="add-product.js"></script>
+</body>
+</html>

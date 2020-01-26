@@ -1,3 +1,5 @@
+import morningGlories from '../data/morning-glories.js';
+
 export const findById = (someId, someArray) => {
     for (let i = 0; i < someArray.length; i++){
         const item = someArray[i];
@@ -23,3 +25,23 @@ export const calcOrderTotal = (cartArray, productsArray) => {
     }
     return (orderTotal);
 };
+
+const FLOWER_KEY = '__flowers';
+
+const populateProductsLocalStorage = () => {
+    const flowersAlreadyExist = localStorage.getItem(FLOWER_KEY);
+
+    if (!flowersAlreadyExist) {
+        const stringyFlowers = JSON.stringify(morningGlories);
+        localStorage.setItem(FLOWER_KEY, stringyFlowers);
+    }
+};
+
+export const getProducts = () => {
+    populateProductsLocalStorage();
+
+    const products = localStorage.getItem(FLOWER_KEY);
+    const parsedProducts = JSON.parse(products);
+
+    return parsedProducts;
+}
